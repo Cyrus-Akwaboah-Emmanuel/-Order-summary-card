@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +14,9 @@
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Dark-blue: hsl(223, 47%, 23%);
+
+    /* font */
+    --font-family: 'Red Hat Display', sans-serif;
 }
 
 body{
@@ -34,6 +38,7 @@ main{
     border-radius: 8px;
     background-color: #fff;
     transition: .4s ease;
+    font-family: var(--font-family);
 }
 main:hover{
     max-width: 350px;
@@ -57,6 +62,8 @@ main:hover{
     text-align: center;
 }
 
+#subtitle{color: gray;}
+
 .info > * { padding-bottom: 1rem;}
 .info button{
     padding-bottom: 0px;
@@ -69,6 +76,7 @@ main:hover{
     border-radius: 8px;
     cursor: pointer;
     transition: .4s ease;
+    font-family: var(--font-family);
     background-color: var(--Bright-blue);
 }
 .info button:hover{
